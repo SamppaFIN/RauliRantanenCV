@@ -56,7 +56,7 @@ const doc = new Document({
       p(T('Kansimies, jolla on noin 26 vuotta kokemusta merillä ja yli 30 alusta takana, Jäämeren troolareista ropax-laivoihin ja höyrylaivaan. Kannan vastuuni työstä, turvatoimitehtävästäni ja koko laivaporukan hyvinvoinnista. Jos eteen tulee työ, jota en osaa, opettelen. Etsin ensisijaisesti laivatyötä, ja tavoitteenani on matruusin pätevyys.')),
 
       h(T('Pätevyydet ja todistukset')),
-      line(T('Pätevyyskirja'), T('Vahtimies, kansi – Watchkeeping Rating, Deck (STCW II/4)'), T('voimassa toistaiseksi')),
+      line(T('Pätevyyskirja'), T('Vahtimies, kansi (STCW II/4)'), T('voimassa toistaiseksi')),
       line('STCW', 'Basic Training (VI/1)', T('voimassa')),
       line('', 'Security Awareness (VI/6.1), Designated Security Duties (VI/6.2)', T('voimassa')),
       line('', T('Crowd Management (matkustaja-aluskoulutus)')),
