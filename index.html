@@ -258,7 +258,7 @@ a{color:#1D5FA8}a:hover{color:#0B2545}
 <section id="video" style="max-width: 1120px; margin: 0 auto; padding: 40px 24px">
 <div style="background: #13315C; color: #FFFFFF; border-radius: 18px; padding: 32px; display: flex; flex-wrap: wrap; align-items: center; gap: 32px 48px">
 <div style="flex: 1 1 380px; min-width: 0; max-width: 520px; aspect-ratio: 4 / 5; border-radius: 12px; overflow: hidden; background: #8FC6F2">
-<svg id="rauli-esittely" viewBox="0 0 800 1000" role="img" aria-label="Animaatio: Rauli heittää kiinnitysköyttä höyrylaiva Tarjanteen kannelta. Piipusta nousee höyryä, lokit lentävät ja laiva keinuu aalloilla." style="display: block; width: 100%; height: 100%">
+<svg id="rauli-esittely" viewBox="0 0 800 1000" role="img" aria-label="Animaatio: Rauli heittää kiinnitysköyttä höyrylaiva Tarjanteen kannelta. Rauli keinuu ja laulaa, nuotteja leijuu ilmaan, piipusta nousee höyryä, lokit lentävät ja laiva keinuu aalloilla." style="display: block; width: 100%; height: 100%">
 <style>
 #rauli-esittely .ra-ship{transform-box:view-box;transform-origin:400px 960px;animation:ra-bob 5.5s ease-in-out infinite}
 @keyframes ra-bob{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(6px) rotate(.6deg)}}
@@ -291,6 +291,23 @@ a{color:#1D5FA8}a:hover{color:#0B2545}
 #rauli-esittely .ra-gull{transform:translate(160px,0)}
 #rauli-esittely .ra-cap1{opacity:1 !important}
 }
+
+#rauli-esittely .ra-bubble{opacity:0;transform-box:view-box}
+#rauli-esittely .ra-bubble1{opacity:1;transform-origin:454px 452px}
+#rauli-esittely .ra-bubble2{transform-origin:352px 474px}
+#rauli-esittely.is-playing .ra-bubble{opacity:0;animation:ra-sing 5s ease-in-out infinite both}
+#rauli-esittely.is-playing .ra-bubble1{animation-delay:3.4s}
+#rauli-esittely.is-playing .ra-bubble2{animation-delay:5.9s}
+@keyframes ra-sing{0%{opacity:0;transform:scale(.3)}7%{opacity:1;transform:scale(1.08)}11%{transform:scale(1)}42%{opacity:1;transform:scale(1)}48%{opacity:0;transform:scale(.9)}100%{opacity:0;transform:scale(.9)}}
+#rauli-esittely .ra-note{opacity:0;transform-box:fill-box;transform-origin:center}
+#rauli-esittely.is-playing .ra-note{animation:ra-note 3s ease-out infinite both}
+#rauli-esittely.is-playing .ra-note1{animation-delay:3.6s}
+#rauli-esittely.is-playing .ra-note2{animation-delay:4.6s}
+#rauli-esittely.is-playing .ra-note3{animation-delay:5.6s}
+@keyframes ra-note{0%{opacity:0;transform:translate(0,0) rotate(0)}12%{opacity:1}70%{opacity:1}100%{opacity:0;transform:translate(96px,-150px) rotate(16deg)}}
+@media (prefers-reduced-motion: reduce){#rauli-esittely .ra-bubble1{opacity:1 !important}}
+#rauli-esittely .ra-sway{transform-box:view-box;transform-origin:501.1px 787.1px;animation:ra-sway 1.3s ease-in-out infinite alternate}
+@keyframes ra-sway{0%{transform:rotate(-1.4deg) translateY(0)}50%{transform:rotate(0deg) translateY(-6px)}100%{transform:rotate(1.4deg) translateY(0)}}
 </style>
 <defs>
 <filter id="ra-duotone" color-interpolation-filters="sRGB">
@@ -307,8 +324,8 @@ a{color:#1D5FA8}a:hover{color:#0B2545}
 </defs>
 <rect width="800" height="1000" fill="#8FC6F2"></rect>
 <g class="ra-ship">
-<image id="ra-duo" href="assets/rauli.jpg" x="-39.9" y="-101.7" width="879.8" height="1319.1" filter="url(#ra-duotone)" visibility="hidden"></image>
-<g id="ra-color"><image href="assets/rauli.jpg" x="-39.9" y="-101.7" width="879.8" height="1319.1"></image></g>
+<g id="ra-duo" filter="url(#ra-duotone)" visibility="hidden"><image href="assets/esittely-tausta.jpg" x="-39.9" y="-37.32" width="879.8" height="1094.92"></image><g class="ra-sway"><image href="assets/esittely-rauli.webp" x="48.98" y="339.46" width="594.47" height="718.14"></image></g></g>
+<g id="ra-color"><image href="assets/esittely-tausta.jpg" x="-39.9" y="-37.32" width="879.8" height="1094.92"></image><g class="ra-sway"><image href="assets/esittely-rauli.webp" x="48.98" y="339.46" width="594.47" height="718.14"></image></g></g>
 <g fill="url(#ra-steam)">
 <circle class="ra-puff ra-puff1" cx="352" cy="286" r="26"></circle>
 <circle class="ra-puff ra-puff2" cx="352" cy="286" r="26"></circle>
@@ -316,6 +333,13 @@ a{color:#1D5FA8}a:hover{color:#0B2545}
 <circle class="ra-puff ra-puff4" cx="352" cy="286" r="26"></circle>
 <circle class="ra-puff ra-puff5" cx="352" cy="286" r="26"></circle>
 <circle class="ra-puff ra-puff6" cx="352" cy="286" r="26"></circle>
+</g>
+<g class="ra-sway">
+<g class="ra-note ra-note1"><g transform="translate(474 476) scale(1.4)"><path d="M7 -3 V-36 q12 4 15 16" fill="none" stroke="#0B2545" stroke-width="4" stroke-linecap="round"></path><ellipse cx="0" cy="0" rx="10" ry="7.5" transform="rotate(-20)" fill="#FFC83D" stroke="#0B2545" stroke-width="3"></ellipse></g></g>
+<g class="ra-note ra-note2"><g transform="translate(474 476) scale(1.4)"><path d="M7 -3 V-36 q12 4 15 16" fill="none" stroke="#0B2545" stroke-width="4" stroke-linecap="round"></path><ellipse cx="0" cy="0" rx="10" ry="7.5" transform="rotate(-20)" fill="#FFC83D" stroke="#0B2545" stroke-width="3"></ellipse></g></g>
+<g class="ra-note ra-note3"><g transform="translate(474 476) scale(1.4)"><path d="M7 -3 V-36 q12 4 15 16" fill="none" stroke="#0B2545" stroke-width="4" stroke-linecap="round"></path><ellipse cx="0" cy="0" rx="10" ry="7.5" transform="rotate(-20)" fill="#FFC83D" stroke="#0B2545" stroke-width="3"></ellipse></g></g>
+<g class="ra-bubble ra-bubble1"><path d="M508 394 L454 452 L548 394 Z" fill="#FFFFFF" stroke="#0B2545" stroke-width="4" stroke-linejoin="round"></path><rect x="478" y="316" width="156" height="78" rx="39" fill="#FFFFFF" stroke="#0B2545" stroke-width="4"></rect><path d="M510 394 L546 394" stroke="#FFFFFF" stroke-width="6"></path><g transform="translate(520 376)"><path d="M7 -3 V-34 q11 4 14 15" fill="none" stroke="#0B2545" stroke-width="4" stroke-linecap="round"></path><ellipse rx="9" ry="7" transform="rotate(-20)" fill="#0B2545"></ellipse></g><g transform="translate(558 380)"><path d="M7 -3 V-34 M35 -9 V-40" stroke="#0B2545" stroke-width="4" stroke-linecap="round"></path><path d="M5 -36 L37 -42 L37 -34 L5 -28 Z" fill="#0B2545"></path><ellipse rx="9" ry="7" transform="rotate(-20)" fill="#0B2545"></ellipse><ellipse cx="28" cy="-6" rx="9" ry="7" transform="rotate(-20 28 -6)" fill="#0B2545"></ellipse></g></g>
+<g class="ra-bubble ra-bubble2"><path d="M236 440 L352 474 L276 440 Z" fill="#FFFFFF" stroke="#0B2545" stroke-width="4" stroke-linejoin="round"></path><rect x="146" y="362" width="156" height="78" rx="39" fill="#FFFFFF" stroke="#0B2545" stroke-width="4"></rect><path d="M238 440 L274 440" stroke="#FFFFFF" stroke-width="6"></path><g transform="translate(188 422)"><path d="M7 -3 V-34 q11 4 14 15" fill="none" stroke="#0B2545" stroke-width="4" stroke-linecap="round"></path><ellipse rx="9" ry="7" transform="rotate(-20)" fill="#0B2545"></ellipse></g><g transform="translate(226 426)"><path d="M7 -3 V-34 M35 -9 V-40" stroke="#0B2545" stroke-width="4" stroke-linecap="round"></path><path d="M5 -36 L37 -42 L37 -34 L5 -28 Z" fill="#0B2545"></path><ellipse rx="9" ry="7" transform="rotate(-20)" fill="#0B2545"></ellipse><ellipse cx="28" cy="-6" rx="9" ry="7" transform="rotate(-20 28 -6)" fill="#0B2545"></ellipse></g></g>
 </g>
 </g>
 <g transform="translate(0 120) scale(1.35)"><g class="ra-gull ra-gull1"><g class="ra-wing"><path d="M-16 0 Q-8 -9 0 0 Q8 -9 16 0" fill="none" stroke="#0B2545" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path></g></g></g>
