@@ -1,9 +1,24 @@
 {
   "same": [
-    "Rauli Rantanen", "Rauli", "Rantanen", "Basic Training (STCW VI/1)", "Security Awareness (STCW VI/6.1)",
-    "Designated Security Duties (STCW VI/6.2)", "s/s Tarjanne", "m/s Bore Bay", "Bore", "m/s Finlandia", "Eckerö Line",
-    "Hopealinjat · s/s Tarjanne", "Bore · m/s Bore Bay", "Eckerö Line · m/s Finlandia", "WinNova", "PDF", "DOC",
-    "rauli.rantanen@gmail.com"
+    "Rauli Rantanen",
+    "Rauli",
+    "Rantanen",
+    "Basic Training (STCW VI/1)",
+    "Security Awareness (STCW VI/6.1)",
+    "Designated Security Duties (STCW VI/6.2)",
+    "s/s Tarjanne",
+    "m/s Bore Bay",
+    "Bore",
+    "m/s Finlandia",
+    "Eckerö Line",
+    "Hopealinjat · s/s Tarjanne",
+    "Bore · m/s Bore Bay",
+    "Eckerö Line · m/s Finlandia",
+    "WinNova",
+    "PDF",
+    "DOC",
+    "rauli.rantanen@gmail.com",
+    "WhatsApp"
   ],
   "site": {
     "en": {
@@ -121,8 +136,9 @@
       "Kopio henkilötietosivusta": "Copy of the personal data page",
       "Otetaanko köydet irti?": "Shall we cast off?",
       "Soita tai laita viestiä, olen käytettävissä heti.": "Call or send a message, I'm available immediately.",
-      "Lähetä WhatsApp-viesti": "Send a WhatsApp message",
-      "Tampere": "Tampere, Finland"
+      "Soita": "Call",
+      "Sähköposti": "Email",
+      "rauli.rantanen@gmail.com · Tampere": "rauli.rantanen@gmail.com · Tampere, Finland"
     },
     "sv": {
       "Rauli Rantanen – meri-CV": "Rauli Rantanen – sjömans-CV",
@@ -239,8 +255,9 @@
       "Kopio henkilötietosivusta": "Kopia av personuppgiftssidan",
       "Otetaanko köydet irti?": "Ska vi kasta loss?",
       "Soita tai laita viestiä, olen käytettävissä heti.": "Ring eller skicka ett meddelande, jag är tillgänglig direkt.",
-      "Lähetä WhatsApp-viesti": "Skicka ett WhatsApp-meddelande",
-      "Tampere": "Tammerfors"
+      "Soita": "Ring",
+      "Sähköposti": "E-post",
+      "rauli.rantanen@gmail.com · Tampere": "rauli.rantanen@gmail.com · Tammerfors"
     }
   },
   "attrs": {
@@ -256,9 +273,18 @@
     }
   },
   "mail": {
-    "fi": {"subject": "Todistuspyyntö – Rauli Rantasen CV", "body": "Hei Rauli,\r\n\r\nPyydän todistuksesi zip-pakettina tähän sähköpostiosoitteeseen.\r\n\r\nNimi:\r\nYritys / alus:\r\n\r\nTerveisin"},
-    "en": {"subject": "Certificate request – Rauli Rantanen CV", "body": "Hi Rauli,\r\n\r\nPlease send your certificates as a zip file to this email address.\r\n\r\nName:\r\nCompany / ship:\r\n\r\nBest regards"},
-    "sv": {"subject": "Begäran om intyg – Rauli Rantanens CV", "body": "Hej Rauli,\r\n\r\nSkicka gärna dina intyg som en zip-fil till den här e-postadressen.\r\n\r\nNamn:\r\nFöretag / fartyg:\r\n\r\nMed vänliga hälsningar"}
+    "fi": {
+      "subject": "Todistuspyyntö – Rauli Rantasen CV",
+      "body": "Hei Rauli,\r\n\r\nPyydän todistuksesi zip-pakettina tähän sähköpostiosoitteeseen.\r\n\r\nNimi:\r\nYritys / alus:\r\n\r\nTerveisin"
+    },
+    "en": {
+      "subject": "Certificate request – Rauli Rantanen CV",
+      "body": "Hi Rauli,\r\n\r\nPlease send your certificates as a zip file to this email address.\r\n\r\nName:\r\nCompany / ship:\r\n\r\nBest regards"
+    },
+    "sv": {
+      "subject": "Begäran om intyg – Rauli Rantanens CV",
+      "body": "Hej Rauli,\r\n\r\nSkicka gärna dina intyg som en zip-fil till den här e-postadressen.\r\n\r\nNamn:\r\nFöretag / fartyg:\r\n\r\nMed vänliga hälsningar"
+    }
   },
   "cv": {
     "en": {
